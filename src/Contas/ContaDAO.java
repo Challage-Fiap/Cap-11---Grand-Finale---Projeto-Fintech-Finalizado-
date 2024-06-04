@@ -1,4 +1,4 @@
-package classes.ContaDAO;
+package Contas;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,12 +8,19 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 public class ContaDAO {
-    private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
-    private static final String USER = "João_Silva";
-    private static final String PASSWORD = "Silvajoão";
+    private static final String JDBC_URL = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
+    private static final String USERNAME = "RM552828"; // Replace with your username
+    private static final String PASSWORD = "300805";  // Replace with your password
 
-    private Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USER, PASSWORD);
+    public Connection getConnection() throws SQLException {
+        try {
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+            return DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
+        } catch (ClassNotFoundException e) {
+            System.err.println("O Driver JDBC não foi encontrado!");
+            e.printStackTrace();
+            throw new SQLException("Failed to get connection: Driver Not Found");
+        }
     }
 
     public List<Conta> getAllContas() throws SQLException {

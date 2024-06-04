@@ -1,29 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e95c-0518-4792-b4bb-f02d8ec1b6d2" name="Changes" comment="" />
+    <list default="true" id="61d6e95c-0518-4792-b4bb-f02d8ec1b6d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Trasacao/Trasacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Trasacao/TrasacaoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente/ClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente/ClienteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contas/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contas/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contas/ContaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contas/ContaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HistoricoCretido/HistCredito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricoCretido/HistCredito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HistoricoCretido/HistCreditoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricoCretido/HistCreditoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalisesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalisesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tezteuntitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tezteuntitled.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2fcBuQjBY27IEtGkuhzL5EGMOrN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/arquivos/Java/tezteuntitled/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/arquivos/Java/tezteuntitled/src/Main.java&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="tezteuntitled" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -42,15 +93,7 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

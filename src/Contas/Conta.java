@@ -1,4 +1,4 @@
-package classes.ContaDAO;
+package Contas;
 
 public class Conta {
     private String nrConta;
