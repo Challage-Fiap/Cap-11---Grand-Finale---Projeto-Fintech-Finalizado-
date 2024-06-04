@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e95c-0518-4792-b4bb-f02d8ec1b6d2" name="Changes" comment="fix: getall">
+    <list default="true" id="61d6e95c-0518-4792-b4bb-f02d8ec1b6d2" name="Changes" comment="fix: Override">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Contas/ContaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contas/ContaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HistoricoCretido/HistCreditoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HistoricoCretido/HistCreditoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalisesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalisesDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,12 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717535895097</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix: Override">
+      <option name="closed" value="true" />
+      <created>1717537339040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717537339040</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix: getall" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: getall" />
+    <MESSAGE value="fix: Override" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Override" />
   </component>
 </project>

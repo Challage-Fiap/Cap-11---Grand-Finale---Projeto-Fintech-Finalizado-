@@ -32,7 +32,7 @@ public class RelatoriosAnalises {
         this.idCliente = idCliente;
     }
 
-    // Optional: Override toString() for printing
+    // Override toString() for printing
     @Override
     public String toString() {
         return "RelatoriosAnalises{" +

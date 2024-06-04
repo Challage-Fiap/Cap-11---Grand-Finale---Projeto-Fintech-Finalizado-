@@ -34,16 +34,15 @@ public class RelatoriosAnalisesDAO {
              ResultSet rs = stmt.executeQuery()) {
             while (rs.next()) {
                 RelatoriosAnalises relatorioAnalise = new RelatoriosAnalises();
-                relatorioAnalise.setIdRelatorioAnalise(rs.getInt("id_relatorio_analise"));
-                relatorioAnalise.setDadosAnalisesRelatorios(rs.getString("dados_analises_relatorios"));
-                relatorioAnalise.setIdCliente(rs.getInt("Cliente_id_cliente"));
+                relatorioAnalise.setIdRelatorioAnalise(rs.getInt("ID_RELATORIO_ANALISE"));
+                relatorioAnalise.setDadosAnalisesRelatorios(rs.getString("DADOS_ANALISES_RELATORIOS"));
+                relatorioAnalise.setIdCliente(rs.getInt("CLIENTE_ID_CLIENTE"));
                 relatoriosAnalisesList.add(relatorioAnalise);
             }
         }
 
         return relatoriosAnalisesList;
     }
-
     public void insertRelatorioAnalise(RelatoriosAnalises relatorioAnalise) throws SQLException {
         String query = "INSERT INTO Relatorios_Analises (id_relatorio_analise, dados_analises_relatorios, Cliente_id_cliente) VALUES (?, ?, ?)";
 

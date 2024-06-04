@@ -26,20 +26,19 @@ public class HistCreditoDAO {
 
     public List<HistCredito> getAllHistCredito() throws SQLException {
         List<HistCredito> histCreditoList = new ArrayList<>();
-        String query = "SELECT * FROM Hist_Credito";
+        String query = "SELECT * FROM HIST_CREDITO";
 
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(query);
              ResultSet rs = stmt.executeQuery()) {
             while (rs.next()) {
                 HistCredito histCredito = new HistCredito();
-                histCredito.setIdHistCredito(rs.getInt("id_hist_credito"));
-                histCredito.setDadosRelacionados(rs.getString("dados_relacionados"));
-                histCredito.setIdCliente(rs.getInt("Cliente_id_cliente"));
+                histCredito.setIdHistCredito(rs.getInt("ID_HIST_CREDITO"));
+                histCredito.setDadosRelacionados(rs.getString("DADOS_RELACIONADOS"));
+                histCredito.setIdCliente(rs.getInt("CLIENTE_ID_CLIENTE"));
                 histCreditoList.add(histCredito);
             }
         }
-
         return histCreditoList;
     }
 
@@ -52,6 +51,6 @@ public class HistCreditoDAO {
             stmt.setString(2, histCredito.getDadosRelacionados());
             stmt.setInt(3, histCredito.getIdCliente());
             stmt.executeUpdate();
-        } // Added the missing closing curly brace here
+        } // Chave de fechamento adicionada
     }
 }
