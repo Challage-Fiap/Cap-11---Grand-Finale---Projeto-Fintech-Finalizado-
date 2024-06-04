@@ -38,4 +38,9 @@ public class Conta {
     public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
     }
+
+    @Override
+    public String toString() {
+        return "Número da Conta: " + this.nrConta + ", Tipo de Conta: " + this.tpConta + ", Saldo: " + this.saldo;
+    }
 }

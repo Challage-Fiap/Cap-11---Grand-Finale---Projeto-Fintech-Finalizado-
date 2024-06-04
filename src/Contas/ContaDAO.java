@@ -32,10 +32,10 @@ public class ContaDAO {
              ResultSet rs = stmt.executeQuery()) {
             while (rs.next()) {
                 Conta conta = new Conta();
-                conta.setNrConta(rs.getString("1234"));
-                conta.setTpConta(rs.getString("Física"));
-                conta.setSaldo(rs.getDouble("R$ 5.000,00"));
-                conta.setIdCliente(rs.getInt("Cliente_id_cliente"));
+                conta.setNrConta(rs.getString("NR_CONTA"));
+                conta.setTpConta(rs.getString("TP_CONTA"));
+                conta.setSaldo(rs.getDouble("SALDO"));
+                conta.setIdCliente(rs.getInt("CLIENTE_ID_CLIENTE"));
                 contas.add(conta);
             }
         }

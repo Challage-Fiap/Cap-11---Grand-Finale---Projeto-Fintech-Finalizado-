@@ -52,7 +52,7 @@ public class Cliente {
     // Override toString() for printing (optional)
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "Cliente{ " +
                 "idCliente=" + idCliente +
                 ", nome='" + nome + '\'' +
                 ", endereco='" + endereco + '\'' +

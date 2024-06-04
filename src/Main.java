@@ -20,7 +20,7 @@ public class Main {
                 System.out.println(conta);
             }
         } catch (SQLException e) {
-            System.err.println("Error getting reports:" + e.getMessage());
+            System.err.println("Error getting reports: 1" + e.getMessage());
         }
 
         System.out.println("Get all reports Cliente:");
@@ -29,7 +29,7 @@ public class Main {
                 System.out.println(cliente);
             }
         } catch (SQLException e) {
-            System.err.println("Error getting reports:" + e.getMessage());
+            System.err.println("Error getting reports: 2" + e.getMessage());
         }
 
         System.out.println("Get all reports histCreditoDAO:");
@@ -38,7 +38,7 @@ public class Main {
                 System.out.println(histCredito);
             }
         } catch (SQLException e) {
-            System.err.println("Error getting reports:" + e.getMessage());
+            System.err.println("Error getting reports: 3" + e.getMessage());
         }
 
         System.out.println("Get all reports relatoriosAnalises:");
@@ -47,7 +47,7 @@ public class Main {
                 System.out.println(relatoriosAnalises);
             }
         } catch (SQLException e) {
-            System.err.println("Error getting reports: " + e.getMessage());
+            System.err.println("Error getting reports: 4" + e.getMessage());
         }
     }
 }
