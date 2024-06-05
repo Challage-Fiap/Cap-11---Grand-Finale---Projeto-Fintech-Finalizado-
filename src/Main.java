@@ -9,8 +9,12 @@ import RelatorioDeAnalises.RelatoriosAnalisesDAO;
 import RelatorioDeAnalises.RelatoriosAnalises;
 import Trasacao.TrasacaoDAO;
 import Trasacao.Transacao;
+
 public class Main {
     public static void main(String[] args) throws SQLException {
+        // colocar os testes aqui (so chamar as funções e importar)
+
+
         ContaDAO contaDAO = new ContaDAO();
         ClienteDAO clienteDAO = new ClienteDAO();
         HistCreditoDAO histCreditoDAO = new HistCreditoDAO();
