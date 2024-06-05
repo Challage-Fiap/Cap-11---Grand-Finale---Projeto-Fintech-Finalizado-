@@ -41,7 +41,6 @@ public class ClienteDAO {
                 clientes.add(cliente);
             }
         }
-
         return clientes;
     }
 

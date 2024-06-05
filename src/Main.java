@@ -7,12 +7,15 @@ import HistoricoCretido.HistCreditoDAO;
 import HistoricoCretido.HistCredito;
 import RelatorioDeAnalises.RelatoriosAnalisesDAO;
 import RelatorioDeAnalises.RelatoriosAnalises;
+import Trasacao.TrasacaoDAO;
+import Trasacao.Transacao;
 public class Main {
     public static void main(String[] args) throws SQLException {
         ContaDAO contaDAO = new ContaDAO();
         ClienteDAO clienteDAO = new ClienteDAO();
         HistCreditoDAO histCreditoDAO = new HistCreditoDAO();
         RelatoriosAnalisesDAO relatoriosAnalisesDAO = new RelatoriosAnalisesDAO();
+        TrasacaoDAO trasacaoDAO = new TrasacaoDAO();
 
         System.out.println("Get all reports Contas:");
         try {
@@ -45,6 +48,15 @@ public class Main {
         try {
             for (RelatoriosAnalises relatoriosAnalises : relatoriosAnalisesDAO.getAllRelatoriosAnalises()) {
                 System.out.println(relatoriosAnalises);
+            }
+        } catch (SQLException e) {
+            System.err.println("Error getting reports: 4" + e.getMessage());
+        }
+
+        System.out.println("Get all reports Transacao:");
+        try {
+            for (Transacao transacao : trasacaoDAO.getAllTransacoes()) {
+                System.out.println(transacao);
             }
         } catch (SQLException e) {
             System.err.println("Error getting reports: 4" + e.getMessage());

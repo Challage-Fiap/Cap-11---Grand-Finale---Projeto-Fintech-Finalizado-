@@ -39,6 +39,10 @@ public class RelatoriosAnalisesDAO {
                 relatorioAnalise.setIdCliente(rs.getInt("CLIENTE_ID_CLIENTE"));
                 relatoriosAnalisesList.add(relatorioAnalise);
             }
+        } catch (SQLException e) {
+            // Adicione uma mensagem de erro ou log
+            System.err.println("Erro ao buscar Relatorios_Analises: " + e.getMessage());
+            throw e;
         }
 
         return relatoriosAnalisesList;
