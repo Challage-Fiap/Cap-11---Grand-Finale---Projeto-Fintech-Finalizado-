@@ -1,26 +1,16 @@
 package Contas;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-public class ContaDAO {
-    private static final String JDBC_URL = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-    private static final String USERNAME = "RM552828"; // Replace with your username
-    private static final String PASSWORD = "300805";  // Replace with your password
+import util.Conexao;
 
+public class ContaDAO {
     public Connection getConnection() throws SQLException {
-        try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-            return DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-        } catch (ClassNotFoundException e) {
-            System.err.println("O Driver JDBC não foi encontrado!");
-            e.printStackTrace();
-            throw new SQLException("Failed to get connection: Driver Not Found");
-        }
+        return new Conexao().getConnection();
     }
 
     public List<Conta> getAllContas() throws SQLException {
@@ -53,7 +43,6 @@ public class ContaDAO {
             stmt.setDouble(3, conta.getSaldo());
             stmt.setInt(4, conta.getIdCliente());
             stmt.executeUpdate();
-        } // Added the missing closing curly brace here
+        } // Chave de fechamento adicionada
     }
 }
-

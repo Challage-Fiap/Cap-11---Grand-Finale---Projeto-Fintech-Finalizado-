@@ -1,29 +1,19 @@
 package Cliente;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import util.Conexao;
 
 public class ClienteDAO {
 
-    private static final String JDBC_URL = "jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL";
-    private static final String USERNAME = "RM552828"; // Replace with your username
-    private static final String PASSWORD = "300805";  // Replace with your password
-
     public Connection getConnection() throws SQLException {
-        try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-            return DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD);
-        } catch (ClassNotFoundException e) {
-            System.err.println("O Driver JDBC não foi encontrado!");
-            e.printStackTrace();
-            throw new SQLException("Failed to get connection: Driver Not Found");
-        }
+        return new Conexao().getConnection();
     }
+
     public List<Cliente> getAllClientes() throws SQLException {
         List<Cliente> clientes = new ArrayList<>();
         String query = "SELECT * FROM Cliente";
@@ -33,11 +23,11 @@ public class ClienteDAO {
              ResultSet rs = stmt.executeQuery()) {
             while (rs.next()) {
                 Cliente cliente = new Cliente();
-                cliente.setIdCliente(rs.getInt("ID_CLIENTE")); // Substitua "João_Silva" pelo nome correto da coluna do ID
-                cliente.setNome(rs.getString("NOME")); // Substitua "João Silva" pelo nome correto da coluna do Nome
-                cliente.setEndereco(rs.getString("ENDERECO")); // Substitua "Av. Paulista, 32" pelo nome correto da coluna do Endereço
-                cliente.setEmail(rs.getString("EMAIL")); // Substitua "JoãoSilva@gmail.com" pelo nome correto da coluna do Email
-                cliente.setInfoContato(rs.getString("INFO_CONTATO")); // Substitua "(99) 99999-9999" pelo nome correto da coluna da Informação de Contato
+                cliente.setIdCliente(rs.getInt("ID_CLIENTE")); // Substitua "ID_CLIENTE" pelo nome correto da coluna do ID
+                cliente.setNome(rs.getString("NOME")); // Substitua "NOME" pelo nome correto da coluna do Nome
+                cliente.setEndereco(rs.getString("ENDERECO")); // Substitua "ENDERECO" pelo nome correto da coluna do Endereço
+                cliente.setEmail(rs.getString("EMAIL")); // Substitua "EMAIL" pelo nome correto da coluna do Email
+                cliente.setInfoContato(rs.getString("INFO_CONTATO")); // Substitua "INFO_CONTATO" pelo nome correto da coluna da Informação de Contato
                 clientes.add(cliente);
             }
         }

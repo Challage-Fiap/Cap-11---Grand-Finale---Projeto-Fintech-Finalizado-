@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d6e95c-0518-4792-b4bb-f02d8ec1b6d2" name="Changes" comment="fix: hist credito">
-      <change afterPath="$PROJECT_DIR$/src/Cliente/ClienteDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Contas/ContaDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HistoricoCretido/HistCreditoDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalisesDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trasacao/TrasacaoDAOTest.java" afterDir="false" />
+    <list default="true" id="61d6e95c-0518-4792-b4bb-f02d8ec1b6d2" name="Changes" comment="add class test">
+      <change afterPath="$PROJECT_DIR$/src/util/Conexao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalisesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RelatorioDeAnalises/RelatoriosAnalisesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Trasacao/TrasacaoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trasacao/TrasacaoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tezteuntitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tezteuntitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +53,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/java/Nova pasta/Cap-11---Grand-Finale---Projeto-Fintech-Finalizado-",
     "onboarding.tips.debug.path": "D:/arquivos/Java/tezteuntitled/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\Nova pasta\Cap-11---Grand-Finale---Projeto-Fintech-Finalizado-\src\main" />
+      <recent name="E:\java\Nova pasta\Cap-11---Grand-Finale---Projeto-Fintech-Finalizado-\src" />
+      <recent name="E:\java\Nova pasta\Cap-11---Grand-Finale---Projeto-Fintech-Finalizado-\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -113,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717542493488</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add class test">
+      <option name="closed" value="true" />
+      <created>1717616810117</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717616810117</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +147,18 @@
     <MESSAGE value="fix: getall" />
     <MESSAGE value="fix: Override" />
     <MESSAGE value="fix: hist credito" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: hist credito" />
+    <MESSAGE value="add class test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class test" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Trasacao/TrasacaoDAOTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
